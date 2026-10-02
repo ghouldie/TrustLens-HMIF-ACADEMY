@@ -1,0 +1,37 @@
+{
+  "score": 0,
+  "level": "Rendah",
+  "confidence": 0.85,
+  "reasons": [
+    "Tidak ada sinyal risiko pada data yang diberikan"
+  ],
+  "signals": {
+    "rekening": {
+      "signal": "REKENING_BERSIH",
+      "points": 0,
+      "label": "Rekening tidak ditemukan di data laporan (bukan jaminan aman)"
+    },
+    "harga": {
+      "signal": "HARGA_WAJAR",
+      "points": 0,
+      "label": "Harga 95% dari median acuan (wajar)"
+    },
+    "profil": {
+      "signal": "PROFIL",
+      "points": 0,
+      "label": "Profil: tidak ada keanehan terdeteksi"
+    },
+    "chat": {
+      "signal": "TAKTIK_CHAT",
+      "points": 0,
+      "label": "Percakapan: tidak ada taktik tekanan terdeteksi"
+    }
+  },
+  "tactics": [],
+  "missing_inputs": [],
+  "safe_steps": [
+    "Tetap simpan bukti percakapan dan transfer.",
+    "Hindari membagikan kode OTP atau PIN kepada siapa pun."
+  ],
+  "disclaimer": "Skor adalah perkiraan, bukan vonis. Keputusan akhir ada pada Anda."
+}

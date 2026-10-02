@@ -1,0 +1,6 @@
+{
+  "_note": "Data contoh (dummy) untuk demo. Bukan data laporan nyata.",
+  "1234567890": {"bank": "BCA", "reports": 7, "category": "barang tidak dikirim"},
+  "0987654321": {"bank": "BRI", "reports": 3, "category": "barang berbeda deskripsi"},
+  "5550001112": {"bank": "Mandiri", "reports": 12, "category": "penipuan preorder"}
+}

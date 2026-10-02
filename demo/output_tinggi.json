@@ -1,0 +1,67 @@
+{
+  "score": 100,
+  "level": "Tinggi",
+  "confidence": 0.85,
+  "reasons": [
+    "Rekening pernah dilaporkan 7 kali (barang tidak dikirim)",
+    "Harga hanya 27% dari median acuan",
+    "Profil: akun baru (10 hari), pengikut banyak untuk akun semuda ini",
+    "Percakapan: Mendesak transfer segera, Menolak rekening bersama/COD, Memindahkan percakapan ke kanal lain, Meminta bayar penuh/DP sebelum barang dilihat"
+  ],
+  "signals": {
+    "rekening": {
+      "signal": "REKENING_DILAPORKAN",
+      "points": 45,
+      "label": "Rekening pernah dilaporkan 7 kali (barang tidak dikirim)"
+    },
+    "harga": {
+      "signal": "HARGA_JAUH_DI_BAWAH",
+      "points": 30,
+      "label": "Harga hanya 27% dari median acuan"
+    },
+    "profil": {
+      "signal": "PROFIL",
+      "points": 18,
+      "label": "Profil: akun baru (10 hari), pengikut banyak untuk akun semuda ini"
+    },
+    "chat": {
+      "signal": "TAKTIK_CHAT",
+      "points": 40,
+      "label": "Percakapan: Mendesak transfer segera, Menolak rekening bersama/COD, Memindahkan percakapan ke kanal lain, Meminta bayar penuh/DP sebelum barang dilihat"
+    }
+  },
+  "tactics": [
+    {
+      "code": "DESAK_TRANSFER",
+      "label": "Mendesak transfer segera",
+      "points": 10,
+      "evidence": "stok terakhir"
+    },
+    {
+      "code": "TOLAK_REKBER",
+      "label": "Menolak rekening bersama/COD",
+      "points": 15,
+      "evidence": "tanpa rekber"
+    },
+    {
+      "code": "PINDAH_KANAL",
+      "label": "Memindahkan percakapan ke kanal lain",
+      "points": 8,
+      "evidence": "pindah ke wa"
+    },
+    {
+      "code": "TRANSFER_DULU",
+      "label": "Meminta bayar penuh/DP sebelum barang dilihat",
+      "points": 10,
+      "evidence": "transfer dulu"
+    }
+  ],
+  "missing_inputs": [],
+  "safe_steps": [
+    "Jangan transfer sekarang.",
+    "Minta transaksi lewat rekening bersama atau COD.",
+    "Minta video call menunjukkan barang.",
+    "Jika sudah terlanjur, hubungi bank dan lapor ke IASC."
+  ],
+  "disclaimer": "Skor adalah perkiraan, bukan vonis. Keputusan akhir ada pada Anda."
+}

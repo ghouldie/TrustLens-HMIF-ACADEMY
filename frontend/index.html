@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrustLens</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><main>
+<h1>TrustLens</h1><p class="sub">Cek risiko penjual sebelum transfer.</p>
+<section class="card"><h2>Data penjual</h2>
+<label>Nomor rekening<input id="account" placeholder="mis. 1234567890"></label>
+<div class="row"><label>Kategori barang<select id="category">
+<option value="">-- pilih --</option><option>laptop bekas</option><option>iphone 12 bekas</option>
+<option>tiket konser</option><option>kamera mirrorless bekas</option><option>sepatu sneakers</option></select></label>
+<label>Harga (Rp)<input id="price" type="number" placeholder="1500000"></label></div>
+<div class="row"><label>Usia akun (hari)<input id="age" type="number"></label>
+<label>Jumlah pengikut<input id="followers" type="number"></label></div>
+<label>Tempel percakapan (nomor HP/rekening disamarkan)<textarea id="chat" rows="4"></textarea></label>
+<button id="go">Periksa risiko</button></section>
+<section id="result" class="card hidden"></section>
+</main><script src="/static/app.js"></script></body></html>
